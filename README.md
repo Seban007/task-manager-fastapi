@@ -1,122 +1,99 @@
-Task Manager Application (FastAPI + React + JavaScript)
-Overview
+Task Manager Application
 
-A full-stack Task Management System built with FastAPI for the backend and React + JavaScript for the frontend. This project allows users to register, log in, and manage tasks (create, read, update, delete) securely using JWT authentication.
+A full-stack Task Management application with FastAPI backend and React + JavaScript frontend. Manage your tasks efficiently with secure user authentication and real-time CRUD operations.
 
-Features
-Backend (FastAPI)
+🚀 Features
 
-RESTful API with FastAPI
+Backend (FastAPI):
 
-User authentication with JWT tokens
+User registration and login with JWT authentication.
 
-CRUD operations for tasks
+Secure password hashing with bcrypt.
 
-SQLite database using SQLAlchemy ORM
+CRUD operations for tasks: Create, Read, Update, Delete.
 
-Password hashing with bcrypt
+Task ownership linked to users.
 
-Input validation with Pydantic schemas
+Fully documented API with Swagger UI.
 
-CORS enabled for frontend integration
+Frontend (React + JS):
 
-Frontend (React + JavaScript)
+Interactive task dashboard with real-time updates.
 
-Single Page Application (SPA) built with React and vanilla JS
+Add, edit, complete, and delete tasks.
 
-Responsive and interactive UI
+User login and registration forms integrated with backend JWT auth.
 
-User registration and login
+Modern, responsive UI for desktop and mobile.
 
-Create, edit, delete, and view tasks
+📦 Tech Stack
+Layer	Technology
+Backend	Python, FastAPI
+Frontend	React, JavaScript, CSS
+Database	SQLite
+Authentication	JWT, OAuth2PasswordBearer
+Tools	Uvicorn, SQLAlchemy, Passlib, Swagger UI
+⚡ How to Run
 
-Integration with backend REST API
+Backend:
 
-Handles JWT authentication and stores token securely in localStorage
-
-Real-time task updates in the UI
-
-Tech Stack
-
-Backend: Python, FastAPI, SQLAlchemy, SQLite, JWT, Pydantic
-
-Frontend: React, JavaScript, HTML5, CSS3
-
-Tools: Git, GitHub, Uvicorn, Postman/Swagger UI
-
-Installation
-Backend
-# Clone the repository
+# Clone repo
 git clone https://github.com/Seban007/task-manager-fastapi.git
 cd task-manager-fastapi
 
 # Create virtual environment
 python -m venv venv
-venv\Scripts\activate   # Windows
-# source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # macOS/Linux
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run FastAPI server
-uvicorn main:app --reload --port 8000
+# Run FastAPI backend
+uvicorn main:app --reload --port 9000
 
-Frontend
-# Navigate to frontend folder
+
+Frontend:
+
 cd task-manager-frontend
-
-# Install dependencies
 npm install
-
-# Start frontend
 npm start
 
 
-Frontend runs on http://localhost:3000 and connects to backend API.
+Open http://localhost:3000
+ in your browser to use the app.
+)
 
-Usage
+🔑 Usage
 
-Open the frontend in the browser (http://localhost:3000)
+Register a new user in Swagger UI or frontend.
 
-Register a new user or login with existing credentials
+Login to obtain JWT token.
 
-Use the dashboard to:
+Authorize in Swagger UI using JWT to access protected routes.
 
-Create new tasks
+Use frontend to create, update, complete, or delete tasks.
 
-Edit existing tasks
+🎯 Learning Outcome
 
-Delete tasks
+Hands-on experience with FastAPI backend and React frontend integration.
 
-Mark tasks as completed
+Implemented secure user authentication with JWT.
 
-All operations are reflected in the backend API and database License
+Built a responsive and interactive task manager from scratch.
 
-Project Structure
-task-manager-fastapi/
-│
-├── main.py              # FastAPI entry point
-├── database.py          # Database setup
-├── models.py            # SQLAlchemy models
-├── schemas.py           # Pydantic schemas
-├── auth.py              # JWT & authentication
-├── routers/             # API routes
-│   ├── users.py
-│   └── tasks.py
-├── task-manager-frontend/  # React frontend
-│   ├── public/
-│   └── src/
-└── requirements.txt
+Learned deployment and GitHub repo management.
 
-Highlights
+🔗 Links
 
-Full-stack project (React frontend + FastAPI backend)
+Backend Repository: Task Manager FastAPI
 
-Secure authentication using JWT tokens
+👨‍💻 Author
 
-Real-time CRUD functionality
+Andrew Sebi Varghese
+GitHub: Seban007
 
-Fully functional and deployable application
+🛡️ License
 
-Demonstrates ability to build full-stack web applications
+This project is open-source and available under the MIT License.
 
