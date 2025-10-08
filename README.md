@@ -13,7 +13,9 @@ It allows users to create, update, delete, and manage tasks efficiently with JWT
 - 🗂️ **Organized API Structure** with Routers and Schemas
 - 💾 **SQLite Database** using SQLAlchemy ORM
 - ⚡ **FastAPI Backend** for high performance and simplicity
-- 🌐 **React Frontend** for interactive UI (task-manager-frontend)
+- 🌐 **React Frontend** Built a React + JavaScript frontend 
+
+
 
 ---
 
