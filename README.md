@@ -1,90 +1,122 @@
-README.md — FastAPI Task Manager
-# 📝 FastAPI Task Manager
+Task Manager Application (FastAPI + React + JavaScript)
+Overview
 
-A full-stack **Task Management Application** built using **FastAPI** (backend) and **React.js** (frontend).  
-It allows users to create, update, delete, and manage tasks efficiently with JWT authentication and RESTful APIs.
+A full-stack Task Management System built with FastAPI for the backend and React + JavaScript for the frontend. This project allows users to register, log in, and manage tasks (create, read, update, delete) securely using JWT authentication.
 
----
+Features
+Backend (FastAPI)
 
-## 🚀 Features
+RESTful API with FastAPI
 
-- ✅ **User Authentication** using JWT (JSON Web Tokens)
-- 📋 **CRUD Operations** for tasks (Create, Read, Update, Delete)
-- 🗂️ **Organized API Structure** with Routers and Schemas
-- 💾 **SQLite Database** using SQLAlchemy ORM
-- ⚡ **FastAPI Backend** for high performance and simplicity
-- 🌐 **React Frontend** Built a React + JavaScript frontend 
+User authentication with JWT tokens
 
+CRUD operations for tasks
 
+SQLite database using SQLAlchemy ORM
 
----
+Password hashing with bcrypt
 
-## 🧠 Project Structure
+Input validation with Pydantic schemas
 
+CORS enabled for frontend integration
 
+Frontend (React + JavaScript)
 
-task_manager_fastapi/
-│
-├── main.py # Entry point for FastAPI application
-├── auth.py # Handles user authentication (JWT)
-├── crud.py # Database CRUD functions
-├── database.py # Database configuration (SQLite + SQLAlchemy)
-├── models.py # Database models
-├── routers/ # Contains API routes
-├── schemas.py # Pydantic models for request/response
-├── task-manager-frontend/ # React.js frontend code
-├── tasks.db # SQLite database file
-└── .gitignore # Ignored files and folders
+Single Page Application (SPA) built with React and vanilla JS
 
+Responsive and interactive UI
 
----
+User registration and login
 
-## ⚙️ Setup & Installation
+Create, edit, delete, and view tasks
 
-### 1️⃣ Clone the Repository
-```bash
+Integration with backend REST API
+
+Handles JWT authentication and stores token securely in localStorage
+
+Real-time task updates in the UI
+
+Tech Stack
+
+Backend: Python, FastAPI, SQLAlchemy, SQLite, JWT, Pydantic
+
+Frontend: React, JavaScript, HTML5, CSS3
+
+Tools: Git, GitHub, Uvicorn, Postman/Swagger UI
+
+Installation
+Backend
+# Clone the repository
 git clone https://github.com/Seban007/task-manager-fastapi.git
 cd task-manager-fastapi
 
-2️⃣ Create a Virtual Environment
+# Create virtual environment
 python -m venv venv
-venv\Scripts\activate   # (On Windows)
+venv\Scripts\activate   # Windows
+# source venv/bin/activate  # macOS/Linux
 
-3️⃣ Install Dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-4️⃣ Run the FastAPI Server
-uvicorn main:app --reload
+# Run FastAPI server
+uvicorn main:app --reload --port 8000
+
+Frontend
+# Navigate to frontend folder
+cd task-manager-frontend
+
+# Install dependencies
+npm install
+
+# Start frontend
+npm start
 
 
-👉 The app will run at: http://127.0.0.1:8000
+Frontend runs on http://localhost:3000 and connects to backend API.
 
-5️⃣ Open the Interactive API Docs
+Usage
 
-Go to: http://127.0.0.1:8000/docs
+Open the frontend in the browser (http://localhost:3000)
 
-You can test all API endpoints from here.
+Register a new user or login with existing credentials
 
-🧩 API Endpoints
-Method	Endpoint	Description
-POST	/auth/login	User login (JWT authentication)
-GET	/tasks/	Fetch all tasks
-POST	/tasks/	Create a new task
-PUT	/tasks/{id}	Update a task
-DELETE	/tasks/{id}	Delete a task
-🧰 Tech Stack
+Use the dashboard to:
 
-Backend: FastAPI, Python, SQLAlchemy, SQLite
-Frontend: React.js, JavaScript
-Authentication: JWT
-Environment: Virtualenv
-Version Control: Git & GitHub
+Create new tasks
 
-👨‍💻 Author
+Edit existing tasks
 
-Andrew Sebi Varghese
-GitHub: Seban007
+Delete tasks
 
-🛡️ License
+Mark tasks as completed
 
-This project is open-source and available under the MIT License
+All operations are reflected in the backend API and database License
+
+Project Structure
+task-manager-fastapi/
+│
+├── main.py              # FastAPI entry point
+├── database.py          # Database setup
+├── models.py            # SQLAlchemy models
+├── schemas.py           # Pydantic schemas
+├── auth.py              # JWT & authentication
+├── routers/             # API routes
+│   ├── users.py
+│   └── tasks.py
+├── task-manager-frontend/  # React frontend
+│   ├── public/
+│   └── src/
+└── requirements.txt
+
+Highlights
+
+Full-stack project (React frontend + FastAPI backend)
+
+Secure authentication using JWT tokens
+
+Real-time CRUD functionality
+
+Fully functional and deployable application
+
+Demonstrates ability to build full-stack web applications
+
